@@ -1,0 +1,173 @@
+import type {
+  CertificationEntry,
+  EducationEntry,
+  ExperienceEntry,
+} from "@/types/content";
+
+export const experience: ExperienceEntry[] = [
+  {
+    role: "Software Engineer (.NET & DevOps)",
+    company: "Infineon Technologies",
+    companyType: "Semiconductor Manufacturing",
+    location: "Kulim, Malaysia",
+    startDate: "March 2024",
+    endDate: "March 2026",
+    highlights: [
+      "Modernized FI STAREP Reporting and Traceability applications by improving UI usability and implementing performance optimizations, achieving approximately 50% faster report generation and data-query response times.",
+      "Designed, developed, and maintained ASP.NET Core applications and REST APIs, delivering high-quality, reusable, and scalable solutions supporting critical business functions for global end users.",
+      "Designed and implemented automated CI/CD pipelines using Azure DevOps, reducing deployment time by approximately 90% and minimizing human error across multiple environments.",
+      "Scripted deployment provisioning and release management using PowerShell and YAML, cutting task execution time by approximately 50% and improving release consistency across DEV, UAT, and PROD environments.",
+      "Performed unit testing and code quality checks in automated deployments for .NET applications, achieving 80% test coverage pass rate.",
+      "Conducted code reviews and implemented best practices for maintainability and performance, ensuring alignment with FI/ETF architecture standards and improving code quality across the Agile team.",
+    ],
+    technologies: [
+      "ASP.NET Core",
+      "MVC",
+      "WinForms",
+      "C#",
+      "PowerShell",
+      "jQuery",
+      "JavaScript",
+      "Bootstrap",
+      "xUnit.net",
+      "NUnit 3",
+      "Azure DevOps",
+      "Git",
+      "YAML",
+      "CI/CD",
+      "SonarQube",
+      "Windows Server 2019",
+      "Oracle Database",
+    ],
+  },
+  {
+    role: "Application Developer (M365 / SharePoint / .NET)",
+    company: "Maxis Broadband Sdn Bhd",
+    companyType: "Telecommunications / IT",
+    location: "Kuala Lumpur, Malaysia",
+    startDate: "November 2020",
+    endDate: "February 2024",
+    highlights: [
+      "Resolved SharePoint support tickets, reducing the Azure DevOps backlog by approximately 50% and lowering repeat incidents by approximately 50% through root-cause analysis and knowledge-base updates.",
+      "Analyzed requirements and redesigned business logic workflows; authored process and technical documentation that reduced rework and effort process by approximately 50%.",
+      "Developed and maintained highly scalable SharePoint applications, Microsoft 365 automation solutions, and Maxis chatbot modules using SharePoint, ASP.NET, Power Platform, Power Automate, Virtual Agents, Plumsail, SPFx, React, and JavaScript/TypeScript, achieving approximately 99.9% product delivery.",
+      "Built Power Platform pipelines to automate application deployment using ALM automation and CI/CD capabilities, increasing deployment frequency approximately 3x.",
+      "Planned and managed work in Azure DevOps Boards, improving on-time delivery by approximately 50% through prioritization tracking.",
+      "Configured, provisioned, deployed and tested Azure services; delivered migration support achieving 99.9% uptime and approximately 30% performance gains.",
+    ],
+    technologies: [
+      "ASP.NET",
+      "WebForms",
+      "SharePoint",
+      "Power Apps",
+      "Power Automate",
+      "Virtual Agents",
+      "Plumsail Forms",
+      "SPFx",
+      "React",
+      "SSMS",
+      "Azure DevOps",
+      "Microsoft Azure",
+    ],
+  },
+  {
+    role: "Application Developer (.NET)",
+    company: "KAF Investment Bank Berhad",
+    companyType: "Investment Banking",
+    location: "Kuala Lumpur, Malaysia",
+    startDate: "November 2018",
+    endDate: "November 2020",
+    highlights: [
+      "Built and delivered ASP.NET WebForms solutions for in-house systems (VB.NET, jQuery, Bootstrap, SQL Server) on time, streamlining internal workflows and improving functions for business users.",
+      "Translated requirements into Adobe XD wireframes, clickable prototypes, and process workflows, aligning with stakeholders early and reducing rework by 90%.",
+      "Optimized front-end behavior with jQuery and Bootstrap to improve responsiveness and cross-browser consistency, resulting in smoother user experiences and higher adoption.",
+      "Collaborated with business users during UAT to validate features against acceptance criteria, achieving faster sign-offs and more successful delivery.",
+    ],
+    technologies: [
+      "ASP.NET WebForms",
+      "VB.NET",
+      "jQuery",
+      "JavaScript",
+      "Bootstrap",
+      "Adobe Photoshop",
+      "Adobe XD",
+      "Microsoft SQL Server",
+      "SSMS",
+    ],
+  },
+  {
+    role: "IT Developer Intern (SharePoint & Front End)",
+    company: "Breadcrumb Digital",
+    companyType: "Digital Agency",
+    location: "Brisbane, Australia",
+    startDate: "May 2018",
+    endDate: "August 2018",
+    highlights: [
+      "Developed and maintained SharePoint solutions and customized client-side web part components that met client requirements.",
+      "Applied Agile practices (Kanban) for SharePoint service delivery, tracked in JIRA platform.",
+    ],
+    technologies: ["SharePoint", "SPFx", "SPFx RESTful APIs", "React", "TypeScript", "PHP", "JIRA"],
+  },
+  {
+    role: "Software Engineer Trainee (.NET Product Developer)",
+    company: "Mesiniaga Berhad",
+    companyType: "Information Technology",
+    location: "Subang Jaya, Malaysia",
+    startDate: "November 2015",
+    endDate: "January 2016",
+    highlights: [
+      "Analyzed user requirement specifications and implemented and tested complex application solution modules in Java and .NET environments.",
+      "Designed and developed database designs for the developed systems.",
+    ],
+    technologies: ["ASP.NET MVC", "C#", "Bootstrap", "SQL", "Microsoft SQL Server 2012", "SSMS"],
+  },
+];
+
+export const education: EducationEntry[] = [
+  {
+    institution: "Queensland University of Technology (QUT), Brisbane, Australia",
+    credential: "Bachelor of Engineering (Computer and Software Systems)",
+    dateRange: "July 2012 – July 2016",
+    details: [
+      "GPA: 5.594 (7-point scale), Second Class Honours - Division A",
+      "Final Year Project: Robotic Navigation - Reading Traffic Signs (Python)",
+    ],
+  },
+  {
+    institution: "Iverson Associates Sdn Bhd, Kuala Lumpur, Malaysia",
+    credential: "IFX Class: Angular 19 (Seminar)",
+    dateRange: "October 2025",
+    details: [
+      "Covered TypeScript and Angular 19 fundamentals, including components, data binding, component routing, and deployment",
+    ],
+  },
+  {
+    institution: "KelasProgramming, Kuala Lumpur, Malaysia",
+    credential: "Kelas Malam Laravel (Short Bootcamp)",
+    dateRange: "November 2024",
+    details: ["Introduction to application development with the Laravel framework"],
+  },
+];
+
+export const certifications: CertificationEntry[] = [
+  {
+    name: "Scaled Agile Framework (SAFe) 6 Practitioner Certificate",
+    issuer: "IFX-sponsored exam, Kulim, Malaysia",
+    date: "March 2025",
+  },
+  {
+    name: "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+    issuer: "Maxis-sponsored exam, Kuala Lumpur, Malaysia",
+    date: "December 2022",
+  },
+  {
+    name: "Microsoft Certified: Azure Fundamentals (AZ-900) & Microsoft 365 Fundamentals (MS-900)",
+    issuer: "Maxis-sponsored exams, Kuala Lumpur, Malaysia",
+    date: "May–June 2021",
+  },
+  {
+    name: "1st Prize, Maxis Microsoft Power Platform Hackathon (Enterprise Team)",
+    issuer: "Maxis-sponsored event, Kuala Lumpur, Malaysia",
+    date: "December 2020",
+  },
+];

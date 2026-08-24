@@ -1,0 +1,782 @@
+/* 
+    Author: Muhammad Hafidz Misrudin
+    Description: Proprietary (no permission for copy or use or redistribution)
+    Date written: 08/08/2020
+    Date last updated: 05/09/2020
+*/
+
+/* import google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* reset and common styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none; /* remove default style of link */
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; /* add smooth scrolling effect */
+}
+
+.center {
+    display: flex; /* place elements in the center of the page  */
+    justify-content: center; /* center flex items */
+    align-items: center; /* center flex items */
+}
+
+.section-heading {
+    font-size: 6rem;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8rem;
+    border-bottom: 0.3rem solid red;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555555;
+}
+/* end of reset and common styles */
+
+/* section 1 */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url(images/bg-img.jpg) center no-repeat; /* set background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column; /* place elements in the column */
+}
+
+.section-1-heading {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #1a1919;
+    padding: 0 3rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: 0.3rem solid #ffffff;
+    text-shadow: 0.2rem 0.2rem 1rem #555 ;
+}
+
+.person-img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover; /* maintain the quality of the image */
+    border-radius: 50%;
+    border: 0.8rem double rgb(255, 17, 17);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    opacity: 0.9;
+}
+
+.person-name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #1a1919;
+    margin: 2rem 0;
+    padding: 0.5rem 7rem;
+    letter-spacing: 0.3rem;
+}
+
+.person-names-alt {
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #e41c6f;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.section-1-btn {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffffff;
+    border: 0.3rem solid #333;
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+/* end of section 1 */
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #8d75e0;
+    box-shadow: 0.2rem 0.2rem 0.5rem #555555;
+    position: absolute;
+    z-index: 300;
+}
+
+/* create a sticky navbar */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+}
+
+.navbar-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: black;
+    margin: 0 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
+}
+
+/* add new class on change event for each section */
+.change.navbar-link {
+    color: #ffffff;
+}
+
+.navbar-link:hover {
+    color: #ffffff;
+}
+
+/* create lines underneath of navbar links */
+.navbar-link::before {
+    content: "";
+    width: 0%;
+    height: 0.3rem;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+}
+
+/* add new class on change event for lines underneath */
+.change.navbar-link::before {
+    width: 100%;
+}
+
+/* hover effect for underneath lines on links */
+.navbar-link:hover::before {
+    width: 100%;
+}
+/* end of navbar */
+
+/* section 2 */
+.section-2 {
+    width: 100%;
+    height: 100%;
+    padding: 12rem 0 12rem 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* place elements in the column */
+    align-items: center;
+}
+
+.section-2-heading {
+    font-size: 6rem;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8rem;
+    border-bottom: 0.3rem solid red;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555555;
+}
+
+.para-about-section {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0 40rem;
+    text-align: justify;
+}
+
+.para-interests-section {
+    font-size: 1.8rem;
+    margin: 2rem 5rem;
+    padding: 0 35rem;
+    text-align: justify;
+}
+
+.lists {
+    margin-top: 2rem;
+    padding: 0rem 2rem;
+}
+
+.lists .list-item {
+    list-style-type: square;
+}
+/* end of section 2 */
+
+/* section 3 */
+.section-3 {
+    width: 100%;
+    height: 100%;
+    padding: 12rem 0 12rem 0;
+    background-color: #d0cfcf;
+    display: flex; /* place elements in the center of the page */
+    flex-direction: column; /* place elements in the column */
+    align-items: center; /* center flex items */
+}
+
+.section-3-heading {
+    font-size: 6rem;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8rem;
+    border-bottom: 0.3rem solid red;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555555;
+}
+
+.progress-bars-wrapper {
+    margin-bottom: 5rem;
+}
+
+.progress-bar {
+    width: 60rem;
+    height: 3rem;
+    background-color: #cccccc;
+    margin: 1.5rem 0;
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 1rem #555555;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.progress-text span {
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* class for displaying progress bars */
+.progress-percent {
+    width: 0%; /* 90% */
+    height: 100%;
+    background-color: #7aee7a;
+    border-radius: 0.3rem;
+    transition: width 0.8s 0.3s ease-in-out;
+}
+
+.tech-skills {
+    width: 100%;
+    height: 30vh;
+    display: flex; /* place elements in the center of the page */
+    justify-content: space-evenly; /* center flex items with evenly distributed */
+    align-items: center; /* center flex items */
+}
+
+.skill {
+    text-align: center;
+}
+
+.icon-skill .icon {
+    font-size: 8rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #555555;
+}
+
+.skill h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #777777;
+    width: 25rem;
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 0.1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #555555;
+}
+/* end of section 3 */
+
+/* section 4 */
+.section-4 {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: #eef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-wrapper {
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background-color: azure;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
+    position: relative; /* to set the element position for parent */
+    overflow: hidden; /* set overflow element hidden */
+    transition: box-shadow 0.5s; /* make box shadow transition smoother */
+}
+
+/* create hover effect for box shadow */
+.project:hover {
+    box-shadow: 1rem 1rem 1rem #777777;
+}
+
+.project-text {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: absolute; /* to set the element position for child */
+    top: -10rem; /* move element higher */
+    transition: top 0.3s; /* make it smooth transition */
+    z-index: 10; /* move text element above parent container */
+}
+
+/* hover effect for text container */
+.project:hover .project-text {
+    top: 2rem;
+    transition: top 0.3s 0.3s; /* make transition delay and smooth */
+}
+
+.project-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+}
+
+.project-technologies {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: red;
+}
+
+.project-img {
+    width: 30rem;
+    transition: opacity 0.3s;
+}
+
+/* hover effect on image */
+.project:hover .project-img {
+    opacity: 0.1;
+}
+
+.project-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.1rem;
+    border: 0.2rem solid darkred;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    position: absolute; /* to set the element position for child */
+    bottom: -10rem; /* move element lower */
+    transition: bottom 0.3s; /* make it smooth transition */
+}
+
+/* hover effect for button link container */
+.project:hover .project-link  {
+    bottom: 2rem;
+    transition: bottom 0.3s 0.3s; /* make transition delay and smooth */
+}
+/* end of section 4 */
+
+/* section 5 */
+.section-5 {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: rgb(214,247, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quotes-wrapper {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-quote-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
+    transition: box-shadow 0.5s ease-in-out; /* make box shadow transition smoother */
+}
+
+/* create hover effect for box shadow */
+.img-quote-main:hover {
+    box-shadow: 1rem 1rem 1rem #777777;
+}
+
+.quote-img {
+    width: 70rem;
+    height: 40rem;
+    object-fit: cover; /* maintain the quality of the image */
+}
+
+.img-dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.quote-content {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 3rem 15rem;
+    text-align: justify;
+    z-index: 100;
+}
+
+.quote-content blockquote {
+    font-weight: 700;
+}
+
+.author {
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: yellow;
+    margin: 2rem 0;
+    text-align: center;
+    z-index: 100;
+    bottom: 3rem;
+}
+/* end of section 5 */
+
+/* section 6 */
+.section-6 {
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 0;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-6-heading {
+    color: #ffffff;
+    box-shadow: none;
+    border-color: #ffffff;
+}
+
+.contact-form {
+    width: 50rem;
+    flex-direction: column; /* place elements in the column */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #eef;
+    font-size: 1.5rem;
+    border: 0.2rem solid grey;
+    color: #555555;
+}
+
+.contact-form textarea {
+    height: 12rem;
+    max-height: 15rem;
+    max-width: 100%;
+}
+
+.contact-form .contact-form-btn {
+    background-color: rgb(149, 149, 252);
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+}
+/* end of section 6 */
+
+/* section 7 */
+.section-7 {
+    width: 100%;
+    height: 30vh;
+    background-color: #222222;
+    flex-direction: column;
+}
+
+.social-media {
+    margin-bottom: 5rem;
+}
+
+.social-media-link {
+    margin: 0 2rem;
+    padding: 0.7rem;
+    background-color: #8d75e0;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+.social-media-link .icon {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+/* end of section 7 */
+
+
+
+/* responsive section */
+@media screen and (max-width: 1200px) {
+    .tech-skills {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        margin: 3rem 2rem;
+    }
+
+    .section-6 {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section-heading {
+        font-size: 5rem;
+        margin-bottom: 6rem;
+    }
+
+    .section-1-heading {
+        font-size: 4rem;
+    }
+
+    .person-img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .person-name {
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
+        padding: 0.5rem 5rem;   
+    }
+
+    .person-names-alt {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .navbar-link {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .para-about-section {
+        font-size: 1.3rem;
+        padding: 0 26rem;
+    }
+    
+    .para-interests-section {
+        font-size: 1.3rem;
+        margin: 1rem 3rem;
+        padding: 0 23rem;
+    }
+
+    .progress-bar {
+        width: 50rem;
+    }
+
+    .quotes-wrapper {
+        width: 70%;
+    }
+    
+    .img-quote-main {
+        margin: 2rem 0;
+    }
+
+    .quote-img {
+        width: 60rem;
+        height: 35rem;
+    }
+
+    .quote-content {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 2rem 10rem;
+    }
+    
+    .quote-content blockquote {
+        font-weight: 700;
+    }
+    
+    .author {
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1.5rem 0;
+        bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-heading {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .section-1-heading {
+        font-size: 3rem;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+        letter-spacing: 0rem;
+    } 
+
+    .person-name {
+        font-size: 2.5rem;
+        margin: 3rem 0;
+        padding: 0.5rem 5rem;   
+    }
+
+    .section-1-btn {
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 3rem 0;
+        padding: 0.5rem 2rem;
+    }
+
+    .navbar-link {
+        font-size: 1rem;
+        margin: 0 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .para-about-section {
+        font-size: 1rem;
+        padding: 0 20rem;
+    }
+    
+    .para-interests-section {
+        font-size: 1.3rem;
+        margin: 2rem 3rem;
+        padding: 0 20rem;
+    }
+
+    .section-3 {
+        padding: 10rem;
+    }
+
+    .section-3-heading {
+        margin-bottom: 10rem;
+    }
+
+    .progress-bar {
+        width: 45rem;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .quotes-wrapper {
+        width: 100%;
+    }
+    
+    .img-quote-main {
+        margin: 2rem 0;
+    }
+
+    .quote-img {
+        width: 50rem;
+        height: 30rem;
+    }
+
+    .quote-content {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 2rem 7rem;
+    }
+    
+    .quote-content blockquote {
+        font-weight: 700;
+    }
+    
+    .author {
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1.5rem 0;
+        bottom: 3rem;
+    }
+
+    .contact-form {
+        width: 40rem;
+    }
+
+    .copyright {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 58%;
+    }
+
+    .section-heading {
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .para-about-section {
+        font-size: 1rem;
+        padding: 0 13rem;
+    }
+    
+    .para-interests-section {
+        font-size: 1.3rem;
+        margin: 2rem 2rem;
+        padding: 0 11rem;
+    }
+}
+/* end of responsive section */
