@@ -8,10 +8,10 @@ export function Hero() {
       className="relative flex min-h-screen scroll-mt-24 flex-col items-center justify-center overflow-hidden px-6 text-center"
     >
       <div
-        className="absolute inset-0 -z-10 bg-cover bg-center opacity-20"
+        className="absolute inset-0 -z-10 bg-cover bg-center opacity-40"
         style={{ backgroundImage: "url(/images/bg-img.jpg)" }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-bg via-bg/80 to-bg" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-bg/60 via-bg/70 to-bg" />
 
       <motion.img
         initial={{ opacity: 0, scale: 0.9 }}
@@ -26,7 +26,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-        className="font-heading text-sm font-semibold tracking-widest text-accent uppercase"
+        className="font-heading text-lg font-semibold tracking-widest text-accent uppercase"
       >
         {profile.title}
       </motion.p>
@@ -35,7 +35,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-        className="mt-2 font-heading text-4xl font-bold text-text sm:text-6xl"
+        className="mt-2 font-heading text-4xl font-bold text-text sm:text-5xl"
       >
         {profile.name}
       </motion.h1>
