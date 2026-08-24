@@ -1,3 +1,6 @@
+# v2.0-hafidz-personal-website-react
+Hafidz's New Personal Website version V2 [Redesigned]
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
