@@ -29,3 +29,6 @@ Single-page personal portfolio: React 19 + TypeScript + Vite + Tailwind CSS v4 +
 ## Notes
 
 - `legacy-site-backup/` is the old v1 jQuery site, kept for reference only; it is not part of the build. `dist/` is gitignored build output.
+
+## Update for Code Change
+- When to update specifically the UI, just update code changes in the design.
